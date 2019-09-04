@@ -1,7 +1,8 @@
+/*
 ## Colors
 ​
 ### Primary
-​
+​#
 - Soft Blue: hsl(243, 86%, 85%)
 - Very Dark Blue: hsl(243, 87%, 12%)
 ​
@@ -26,6 +27,8 @@
 - Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
 - Weights: 400, 600, 700
 
+*/
+
 html{
 	padding: 0;
 }
@@ -41,7 +44,10 @@ header{
 	background-color: hsl(243, 58%, 33%);
 	background-image: linear-gradient(75deg, hsl(243, 87%, 12%), hsl(243, 86%, 85%));
 	padding-bottom: 25px;
+	clip-path: polygon(0 0, 0 81%, 100% 100%, 100% 100%, 100% 0%);
 }
+
+
 
 #logo{
 	padding-left: 20px;
@@ -87,17 +93,26 @@ a:link {
 
 #right-aside{
 	float: right;
-	width: 40%
-	padding-right: 20px;
+	width: 40%;
+	height: 240px;
 
 }
 
 #hero{
-	max-width: 60%;
+	float: right;
+	max-width: 75%;
+	margin-right: 10%;
+	margin-left: auto;
+
+	height: 100%
 }
 
 main{
 	width: 100%;
+}
+
+#hold-section{
+	width: 100%
 }
 
 .section{
@@ -106,11 +121,15 @@ main{
 	padding-left: 10px;
 }
 
+
+
 #features{
-	max-width: 70%;
+	max-width: 100%;
 	padding-top: 30px;
-	padding-left: 25px
+	padding-left: 25px;
+	height: 40%;
 }
+
 
 #second{
 	margin-left: 30px;
@@ -168,4 +187,9 @@ footer #right{
 }
 
 
+@media only screen and (max-width:600px){
+	.section{
+		width: 80%; 
+	}
+}
 
