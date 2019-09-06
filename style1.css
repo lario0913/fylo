@@ -15,8 +15,11 @@ body{
     font-size: 18px;
 
 }
+h2{
+    color: blue;
+}
 
-h1, h2, h3{
+h1,  h3{
     color: black;
     font-family: 'Raleway';
 }
@@ -107,6 +110,9 @@ body .header{
     color: black;
     font-size: 2rem;
     margin-bottom: 25px
+}
+main h2{
+    color: hsl(243, 58%, 33%);
 }
 main #hold-section{
     padding-top: 25px;
@@ -388,9 +394,16 @@ justify-content: center;
 
 
  @media only screen and (min-device-width : 320px) and (max-device-width : 768px){
-    main h2{
-            font-size: 1.5rem;
-            margin-top: 10px;
+    main h2#first{
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        font-size: 2.5rem;
+        margin-top: 10px;
+        color: hsl(243, 58%, 33%);
+   }
+   main #hold-section .section h3{
+       color: hsl(243, 58%, 33%);
    }
    h2{
        font-size: 1.2rem;
@@ -432,7 +445,13 @@ justify-content: center;
        margin-bottom: 60px;
        text-align: center;
    }
-   
+   .header .header-item .item:nth-child(1) h2{
+       font-size: 2.5rem;
+   }
+   .header .header-item .item:nth-child(1) .button{
+    width: 250px;
+    height: 50px;
+}
    .header .header-item .item:nth-child(2){
        order: 1;
        width: 50%;
@@ -494,6 +513,13 @@ justify-content: center;
            display: block;
            border: none; 
            padding: 0px;
+       }
+       footer #footer-wrapper .section:nth-child(3) form input{
+            width: 80%;
+            height: 50px;
+       }
+       footer #footer-wrapper .section:nth-child(3) form button{
+           height: 50px;
        }
        footer #footer-wrapper .section:nth-child(2) div:nth-child(2){
            margin-top: 30px;
