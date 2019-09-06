@@ -54,12 +54,13 @@ body .header{
         margin-top: 30px;
         margin-bottom: 20px;
     }
-
+    
         .header .header-item img#logo{
-            width: 190px;
+            width: 120px;
         }
         .header .header-item nav{
             padding-right: 25px;
+            padding-top: 25px;
             width: 250px;
             margin: 0px;
         }
@@ -69,6 +70,7 @@ body .header{
                 justify-content: space-between;
                 list-style: none;
                 width: 100%;
+                margin-bottom: 0;
             }
                 nav ul li a{
                     text-decoration: none;
@@ -83,6 +85,9 @@ body .header{
         }
             .header .header-item .item:nth-child(1) h2,h3{
                 color: white;
+            }
+            .header .header-item .item:nth-child(1) .button{
+                height: 35px;
             }
         .header .header-item .item:nth-child(2){
             width: 20%;
@@ -129,6 +134,7 @@ main #hold-section{
     main #hold-section .section p{
         color: #b2b2b2;
         line-height: 27px;
+        font-size: 0.9rem;
     }
 
 #stand-alone{
@@ -147,18 +153,21 @@ main #hold-section{
         margin: 0px;
     }
     #stand-alone p{
-        color: #b2b2b2;
+        color: #3842ca;
+        font-weight: bold;
     }
     #stand-alone form input{
        min-width: 50%;
        height: 35px;
-       outline: none;
+       border: 2px solid #ccc;
        border-radius: 5px;
+       box-shadow: 2px 2px #ccc;
     }
     #stand-alone form button{
-        height: 40px;
+        height: 37px;
         min-width: 30%;
         border-radius: 5px;
+        font-size: 1rem;
     }
 
 /*******************************************************
@@ -190,7 +199,6 @@ footer{
         margin-top: 35px;
         line-height: 27px;
         font-size: 0.9rem;
-        font-family: 'Times New Roman', Times, serif;
     }
         footer #footer-wrapper .section:nth-child(1) img#fylo{
             width: 150px
@@ -232,8 +240,10 @@ footer{
              float: right;
          }
 
-
- @media only screen and (max-width:600px){
+/***********************************************************
+                    MEDIA QUERIES
+************************************************************/
+ @media (max-width:768px){
  main h2{
          font-size: 1.5rem;
          margin-top: 10px;
@@ -258,8 +268,7 @@ width: 40%;
 margin: 0px;
 justify-content: center;
 }
-.header .header-item nav ul li:nth-child(1){
-}
+
 .header .header-item nav ul li .button{
     padding-left: 10px;
     padding-right: 10px;
@@ -351,8 +360,8 @@ justify-content: center;
         width: 80%;
     }
  }
-
- @media only screen and (max-width:900px){
+/*
+ @media (max-width:900px){
     main #hold-section .section:nth-child(1){
         align-self: center;
         border: black;
@@ -377,3 +386,5 @@ justify-content: center;
 
 
  }
+
+ */
