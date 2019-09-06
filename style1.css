@@ -243,7 +243,7 @@ footer{
 /***********************************************************
                     MEDIA QUERIES
 ************************************************************/
-@media only screen and (min-device-width : 320px) and (max-device-width : 768px){
+@media only screen and (min-width : 320px) and (max-width : 768px){
  main h2{
          font-size: 1.5rem;
          margin-top: 10px;
@@ -361,7 +361,7 @@ justify-content: center;
     }
  }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 900px){
+@media only screen and (min-width : 768px) and (max-width : 900px){
     main #hold-section .section:nth-child(1){
         align-self: center;
         border: black;
@@ -370,10 +370,6 @@ justify-content: center;
     main #hold-section .section:nth-child(1) img#features{
         width: 100%;
         height: 400px;
-    }
-
-
-    footer #footer-wrapper{
     }
     footer #footer-wrapper .section:nth-child(1){
         margin-left: 20px;
@@ -386,3 +382,150 @@ justify-content: center;
 
 
  }
+
+
+
+
+
+ @media only screen and (min-device-width : 320px) and (max-device-width : 768px){
+    main h2{
+            font-size: 1.5rem;
+            margin-top: 10px;
+   }
+   h2{
+       font-size: 1.2rem;
+   }
+   p{
+       font-size: 0.9rem;
+   }
+   
+   /*******************************************************
+                       HEADER STYLES
+   *******************************************************/
+   .header .header-item img#logo{
+   width: 20%;
+   padding-left: 15px;
+   }
+   .header .header-item nav{
+   padding-right: 25px;
+   width: 40%;
+   margin: 0px;
+   justify-content: center;
+   }
+   
+   .header .header-item nav ul li .button{
+       padding-left: 10px;
+       padding-right: 10px;
+       outline: none;
+       border-radius: 5px;
+   }
+   .header .header-item:nth-child(2){
+       flex-direction: column;
+       width: 100%;
+   }
+   
+   .header .header-item .item:nth-child(1){
+       order: 2;
+       width: 60%;
+       margin-left: auto;
+       margin-right: auto;
+       margin-bottom: 60px;
+       text-align: center;
+   }
+   
+   .header .header-item .item:nth-child(2){
+       order: 1;
+       width: 50%;
+       margin-left: auto;
+       margin-right: auto;
+   }
+   
+   /*******************************************************
+                       MAIN STYLES
+   *******************************************************/
+        
+       main #hold-section{
+           flex-direction: column;
+       }
+       main #hold-section .section{
+           width: 90%;
+           margin-left: auto;
+           margin-right: auto;
+       }
+   
+   
+       #stand-alone{
+           width: 90%
+       }
+       #stand-alone h2{
+           margin-bottom: 10px;
+       }
+       #stand-alone form input, #stand-alone form button{
+           width: 100%;
+           margin-bottom:6px; 
+       }
+   
+   /*******************************************************
+                       FOOTER STYLES
+   *******************************************************/
+   
+       footer #footer-wrapper{
+           flex-direction: column;
+       }
+       footer #footer-wrapper .section{
+           width: 80%;
+           margin-left: auto;
+           margin-right: auto;
+           text-align: center;
+   
+       }
+       footer #footer-wrapper .section:nth-child(1){
+           margin-left: auto;
+           margin-right: auto;
+           width: 80%;
+           
+       }
+       footer #footer-wrapper .section:nth-child(2){
+           margin-left: auto;
+           margin-right: auto;
+           width: 80%;
+           order: 3;
+           display: block;
+           border: none; 
+           padding: 0px;
+       }
+       footer #footer-wrapper .section:nth-child(2) div:nth-child(2){
+           margin-top: 30px;
+           margin-bottom: 30px;
+       }
+       footer #footer-wrapper .section:nth-child(3){
+           margin-left: auto;
+           margin-right: auto;
+           width: 80%;
+       }
+    }
+   
+   @media only screen and (min-device-width : 768px) and (max-device-width : 900px){
+       main #hold-section .section:nth-child(1){
+           align-self: center;
+           border: black;
+           height: 80%;
+       }
+       main #hold-section .section:nth-child(1) img#features{
+           width: 100%;
+           height: 400px;
+       }
+   
+   
+   
+       footer #footer-wrapper .section:nth-child(1){
+           margin-left: 20px;
+           color: white;
+       }
+       footer #footer-wrapper .section:nth-child(3){
+           margin-right: 0px;
+           margin-left: 30px
+       }
+   
+   
+    }
