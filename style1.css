@@ -243,7 +243,7 @@ footer{
 /***********************************************************
                     MEDIA QUERIES
 ************************************************************/
- @media (max-width:768px){
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px){
  main h2{
          font-size: 1.5rem;
          margin-top: 10px;
@@ -360,8 +360,8 @@ justify-content: center;
         width: 80%;
     }
  }
-/*
- @media (max-width:900px){
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 900px){
     main #hold-section .section:nth-child(1){
         align-self: center;
         border: black;
@@ -386,5 +386,3 @@ justify-content: center;
 
 
  }
-
- */
